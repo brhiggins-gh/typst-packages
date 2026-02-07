@@ -18,10 +18,10 @@
   }
   // for plural add an s if they are not explicitly provided
   if "short-pl" not in definitions {
-    definitions.insert("short-pl", [#definitions.at("short")\s])
+    definitions.insert("short-pl", definitions.at("short") + "s")
   }
   if "long-pl" not in definitions {
-    definitions.insert("long-pl", [#definitions.at("long")\s])
+    definitions.insert("long-pl", definitions.at("long") + "s")
   }
 
   definitions
